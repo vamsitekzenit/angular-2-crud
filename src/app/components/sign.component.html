@@ -1,0 +1,17 @@
+<fieldset>
+    <legend>Signup</legend>
+<form #myForm="ngForm" (ngSubmit)="saveuser(user)" >
+
+    <div>
+    FirstName:<input type="text" name="firstname" ngControl="name" [(ngModel)]="user.firstname"  >
+     LastName:<input type="text" name="lastname" ngControl="age" [(ngModel)]="user.lastname">       
+     Email:<input type="text" name="email" ngControl="passport" [(ngModel)]="user.email">
+     Confirmmail:<input type="text" name="confirmmail" ngControl="phone" [(ngModel)]="user.confirmmail">
+     password:<input type="text" name="password" ngControl="qual"  [(ngModel)]="user.password">
+     confirmpassword:<input type="text" name="confirmpassword" ngControl="qual"  [(ngModel)]="user.confirmpassword">
+    </div><br>
+           
+           <button type="submit">SaveUser</button><br>
+</form>
+
+</fieldset>
